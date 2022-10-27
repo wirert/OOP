@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\bin\Debug\netcoreapp3.1\Farm.exe
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\bin\Debug\netcoreapp3.1\Farm.deps.json
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\bin\Debug\netcoreapp3.1\Farm.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\bin\Debug\netcoreapp3.1\Farm.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\bin\Debug\netcoreapp3.1\Farm.dll
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\bin\Debug\netcoreapp3.1\Farm.pdb
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.dll
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.pdb
+D:\Documents\C#\Repos\04.OOP\01.Inheritance\Farm\obj\Debug\netcoreapp3.1\Farm.genruntimeconfig.cache
