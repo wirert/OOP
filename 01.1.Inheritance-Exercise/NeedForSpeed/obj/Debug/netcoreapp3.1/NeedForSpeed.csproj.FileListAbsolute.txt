@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\bin\Debug\netcoreapp3.1\NeedForSpeed.exe
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\bin\Debug\netcoreapp3.1\NeedForSpeed.deps.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\bin\Debug\netcoreapp3.1\NeedForSpeed.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\bin\Debug\netcoreapp3.1\NeedForSpeed.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\bin\Debug\netcoreapp3.1\NeedForSpeed.dll
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\bin\Debug\netcoreapp3.1\NeedForSpeed.pdb
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.dll
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.pdb
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\NeedForSpeed\obj\Debug\netcoreapp3.1\NeedForSpeed.genruntimeconfig.cache

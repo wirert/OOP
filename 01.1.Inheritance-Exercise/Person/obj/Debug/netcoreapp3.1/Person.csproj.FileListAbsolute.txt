@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\bin\Debug\netcoreapp3.1\Person.exe
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\bin\Debug\netcoreapp3.1\Person.deps.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\bin\Debug\netcoreapp3.1\Person.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\bin\Debug\netcoreapp3.1\Person.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\bin\Debug\netcoreapp3.1\Person.dll
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\bin\Debug\netcoreapp3.1\Person.pdb
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.dll
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.pdb
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Person\obj\Debug\netcoreapp3.1\Person.genruntimeconfig.cache

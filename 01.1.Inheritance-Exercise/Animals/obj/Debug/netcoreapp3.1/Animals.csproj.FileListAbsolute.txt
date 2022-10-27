@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\bin\Debug\netcoreapp3.1\Animals.exe
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\bin\Debug\netcoreapp3.1\Animals.deps.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\bin\Debug\netcoreapp3.1\Animals.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\bin\Debug\netcoreapp3.1\Animals.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\bin\Debug\netcoreapp3.1\Animals.dll
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\bin\Debug\netcoreapp3.1\Animals.pdb
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.dll
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.pdb
+D:\Documents\C#\Repos\04.OOP\01.1.Inheritance-Exercise\Animals\obj\Debug\netcoreapp3.1\Animals.genruntimeconfig.cache
