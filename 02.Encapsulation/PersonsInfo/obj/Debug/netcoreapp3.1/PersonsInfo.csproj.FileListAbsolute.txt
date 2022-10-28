@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\bin\Debug\netcoreapp3.1\PersonsInfo.exe
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\bin\Debug\netcoreapp3.1\PersonsInfo.deps.json
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\bin\Debug\netcoreapp3.1\PersonsInfo.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\bin\Debug\netcoreapp3.1\PersonsInfo.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\bin\Debug\netcoreapp3.1\PersonsInfo.dll
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\bin\Debug\netcoreapp3.1\PersonsInfo.pdb
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.dll
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.pdb
+D:\Documents\C#\Repos\04.OOP\02.Encapsulation\PersonsInfo\obj\Debug\netcoreapp3.1\PersonsInfo.genruntimeconfig.cache
