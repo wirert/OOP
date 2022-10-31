@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\bin\Debug\netcoreapp3.1\AnimalFarm.exe
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\bin\Debug\netcoreapp3.1\AnimalFarm.deps.json
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\bin\Debug\netcoreapp3.1\AnimalFarm.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\bin\Debug\netcoreapp3.1\AnimalFarm.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\bin\Debug\netcoreapp3.1\AnimalFarm.dll
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\bin\Debug\netcoreapp3.1\AnimalFarm.pdb
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.dll
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.pdb
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\AnimalFarm\obj\Debug\netcoreapp3.1\AnimalFarm.genruntimeconfig.cache
