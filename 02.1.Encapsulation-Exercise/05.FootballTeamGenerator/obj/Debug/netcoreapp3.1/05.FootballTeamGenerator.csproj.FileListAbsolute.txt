@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\bin\Debug\netcoreapp3.1\05.FootballTeamGenerator.exe
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\bin\Debug\netcoreapp3.1\05.FootballTeamGenerator.deps.json
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\bin\Debug\netcoreapp3.1\05.FootballTeamGenerator.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\bin\Debug\netcoreapp3.1\05.FootballTeamGenerator.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\bin\Debug\netcoreapp3.1\05.FootballTeamGenerator.dll
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\bin\Debug\netcoreapp3.1\05.FootballTeamGenerator.pdb
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.dll
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.pdb
+D:\Documents\C#\Repos\04.OOP\02.1.Encapsulation-Exercise\05.FootballTeamGenerator\obj\Debug\netcoreapp3.1\05.FootballTeamGenerator.genruntimeconfig.cache
