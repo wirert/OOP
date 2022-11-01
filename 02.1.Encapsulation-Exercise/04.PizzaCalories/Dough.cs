@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _04.PizzaCalories
 {
@@ -63,6 +61,6 @@ namespace _04.PizzaCalories
             }
         }
 
-        internal double GetCalories() => weight * CaloriesPerGram;   
+        public double GetCalories() => weight * CaloriesPerGram;   
     }
 }

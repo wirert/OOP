@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 
 namespace _04.PizzaCalories
 {
@@ -8,8 +6,8 @@ namespace _04.PizzaCalories
     {
         static void Main(string[] args)
         {
-            string[] pizzaInfo = Console.ReadLine().Split(" ");
-            string[] doughInfo = Console.ReadLine().Split(" ");
+            string[] pizzaInfo = Console.ReadLine().Split();
+            string[] doughInfo = Console.ReadLine().Split();
             try
             {
                 Dough dough = new Dough(doughInfo[1], doughInfo[2], int.Parse(doughInfo[3]));
@@ -20,7 +18,7 @@ namespace _04.PizzaCalories
 
                 while ((command = Console.ReadLine()) != "END")
                 {
-                    string[] toppingInfo = command.Split(" ");
+                    string[] toppingInfo = command.Split();
                     
                     pizza.AddTopping(new Topping(toppingInfo[1], int.Parse(toppingInfo[2])));
                 }                

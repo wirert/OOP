@@ -12,8 +12,8 @@ namespace _04.PizzaCalories
         public Pizza(string name, Dough dough)
         {
             this.Name = name;
-            toppings = new List<Topping>();
             this.dough = dough;
+            toppings = new List<Topping>();
         }
 
         public string Name
@@ -21,7 +21,7 @@ namespace _04.PizzaCalories
             get => name;
             private set
             {
-                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value) || value.Length > 15)
+                if (string.IsNullOrEmpty(value) || value.Length > 15)
                 {
                     throw new Exception("Pizza name should be between 1 and 15 symbols.");
                 }
@@ -29,7 +29,7 @@ namespace _04.PizzaCalories
                 name = value;
             }
         }       
-        public Dough Dough { set { dough = value; } }
+        public Dough Dough { get { return dough; } set { dough = value; } }
         public int NumberOfToppings => toppings.Count;
         public double TotalCalories
         {
