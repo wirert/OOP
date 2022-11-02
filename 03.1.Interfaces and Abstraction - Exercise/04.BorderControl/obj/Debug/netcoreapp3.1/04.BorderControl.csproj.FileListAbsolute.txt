@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\bin\Debug\netcoreapp3.1\04.BorderControl.exe
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\bin\Debug\netcoreapp3.1\04.BorderControl.deps.json
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\bin\Debug\netcoreapp3.1\04.BorderControl.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\bin\Debug\netcoreapp3.1\04.BorderControl.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\bin\Debug\netcoreapp3.1\04.BorderControl.dll
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\bin\Debug\netcoreapp3.1\04.BorderControl.pdb
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.dll
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.pdb
+D:\Documents\C#\Repos\04.OOP\03.1.Interfaces and Abstraction - Exercise\04.BorderControl\obj\Debug\netcoreapp3.1\04.BorderControl.genruntimeconfig.cache
