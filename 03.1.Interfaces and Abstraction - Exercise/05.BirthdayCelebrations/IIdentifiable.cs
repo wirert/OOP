@@ -1,4 +1,4 @@
-﻿namespace BorderControl
+﻿namespace BirthdayCelebrations
 {
     public interface IIdentifiable
     {        

@@ -1,4 +1,4 @@
-﻿namespace _04.BorderControl
+﻿namespace BorderControl
 {
     public class Citizen : IIdentifiable
     {
