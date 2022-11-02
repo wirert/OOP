@@ -1,0 +1,14 @@
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\bin\Debug\netcoreapp3.1\Cars.exe
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\bin\Debug\netcoreapp3.1\Cars.deps.json
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\bin\Debug\netcoreapp3.1\Cars.runtimeconfig.json
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\bin\Debug\netcoreapp3.1\Cars.runtimeconfig.dev.json
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\bin\Debug\netcoreapp3.1\Cars.dll
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\bin\Debug\netcoreapp3.1\Cars.pdb
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.csproj.AssemblyReference.cache
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.AssemblyInfoInputs.cache
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.AssemblyInfo.cs
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.csproj.CoreCompileInputs.cache
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.dll
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.pdb
+D:\Documents\C#\Repos\04.OOP\03.Interfaces and Abstraction\Cars\obj\Debug\netcoreapp3.1\Cars.genruntimeconfig.cache
