@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MilitaryElite
 {
-    public class SpecialisedSoldier : Private
+    public class SpecialisedSoldier : Private, ISpecialisedSoldier
     {
         private string corps;
 
@@ -16,7 +14,7 @@ namespace MilitaryElite
         public string Corps
         {
             get => corps;
-            private set
+            set
             {
                 if (value != "Airforces" && value != "Marines")
                 {

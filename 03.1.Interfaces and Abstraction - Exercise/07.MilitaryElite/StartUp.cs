@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
 
 namespace MilitaryElite
 {
@@ -39,7 +38,7 @@ namespace MilitaryElite
                             AddEngineer(tokens, soldierList);
                         }
                         catch (ArgumentException) { }
-                        
+
                         break;
                     case "Commando":
                         try
@@ -47,11 +46,11 @@ namespace MilitaryElite
                             AddCommando(tokens, soldierList);
                         }
                         catch (ArgumentException) { }
-                        
+
                         break;
                     case "Spy":
                         soldierList.Add(new Spy(id, firstName, lastName, int.Parse(tokens[4])));
-                        break;                    
+                        break;
                 }
             }
 
@@ -71,7 +70,12 @@ namespace MilitaryElite
 
             for (int i = 5; i < tokens.Length; i++)
             {
-                privatesInCommand.Add(privates.FirstOrDefault(p => p.Id == int.Parse(tokens[i])));
+                Private privateToAdd = privates.FirstOrDefault(p => p.Id == int.Parse(tokens[i]));
+
+                if (privateToAdd != null)
+                {
+                    privatesInCommand.Add(privateToAdd);
+                }
             }
 
             soldierList.Add(new LieutenantGeneral(id, firstName, lastName, salary, privatesInCommand));
@@ -84,11 +88,11 @@ namespace MilitaryElite
             string lastName = tokens[3];
             decimal salary = decimal.Parse(tokens[4]);
             string corps = tokens[5];
-            Dictionary<string, int> repairs = new Dictionary<string, int>();
+            List<Repair> repairs = new List<Repair>();
 
             for (int i = 6; i < tokens.Length - 1; i += 2)
             {
-                repairs.Add(tokens[i], int.Parse(tokens[i + 1]));
+                repairs.Add(new Repair(tokens[i], int.Parse(tokens[i + 1])));
             }
 
             Engineer engineer = new Engineer(id, firstName, lastName, salary, corps, repairs);
@@ -102,18 +106,9 @@ namespace MilitaryElite
             string lastName = tokens[3];
             decimal salary = decimal.Parse(tokens[4]);
             string corps = tokens[5];
-            List<Mission> missions = new List<Mission>();
+            List<string> missions = new List<string>(tokens.Skip(6));
 
-            for (int i = 6; i < tokens.Length - 1; i += 2)
-            {
-                try
-                {
-                    missions.Add(new Mission(tokens[i], tokens[i + 1]));
-                }
-                catch (ArgumentException) { } 
-            }
-
-            soldierList.Add(new Commando(id, firstName,lastName,salary,corps, missions));
+            soldierList.Add(new Commando(id, firstName, lastName, salary, corps, missions));
         }
     }
 }

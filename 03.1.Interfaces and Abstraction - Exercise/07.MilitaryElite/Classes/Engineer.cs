@@ -3,14 +3,14 @@ using System.Text;
 
 namespace MilitaryElite
 {
-    public class Engineer : SpecialisedSoldier
+    public class Engineer : SpecialisedSoldier, IEngineer
     {
-        private Dictionary<string, int> repairs;
-
-        public Engineer(int id, string firstName, string lastName, decimal salary, string corps, Dictionary<string, int> repairs) : base(id, firstName, lastName, salary, corps)
+        public Engineer(int id, string firstName, string lastName, decimal salary, string corps, List<Repair> repairs) : base(id, firstName, lastName, salary, corps)
         {
-            this.repairs = repairs;
+            this.Repairs = repairs;
         }
+
+        public List<Repair> Repairs { get; set; }
 
         public override string ToString()
         {
@@ -20,9 +20,9 @@ namespace MilitaryElite
                  .AppendLine($"Corps: {Corps}")
                  .AppendLine("Repairs:");
 
-            foreach (var repair in repairs)
+            foreach (var repair in Repairs)
             {
-                sb.AppendLine($"Part Name: {repair.Key} Hours Worked: {repair.Value}");
+                sb.AppendLine($"  {repair}");
             }
 
             return sb.ToString().TrimEnd();
