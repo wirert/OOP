@@ -1,5 +1,7 @@
-﻿namespace MilitaryElite
+﻿namespace MilitaryElite.Models
 {
+    using Interfaces;
+
     public class Repair : IRepair
     {
         public Repair(string partName, int hours)

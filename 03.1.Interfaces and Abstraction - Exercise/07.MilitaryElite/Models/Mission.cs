@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace MilitaryElite
+﻿namespace MilitaryElite.Models
 {
+    using Interfaces;
+
     public class Mission : IMission
     {        
 
