@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace Vehicles
 {
@@ -7,52 +7,80 @@ namespace Vehicles
     {
         static void Main(string[] args)
         {
-            string[] carInfo = Console.ReadLine().Split();
-            double carFuel = double.Parse(carInfo[1]);
-            double carConsumption = double.Parse(carInfo[2]);
+            Dictionary<string, Vehicle> vehicles = new Dictionary<string, Vehicle>();
 
-            Car car = new Car(carFuel, carConsumption);
-
-            string[] truckInfo = Console.ReadLine().Split();
-            double truckFuel = double.Parse(truckInfo[1]);
-            double truckConsumption = double.Parse(truckInfo[2]);
-
-            Truck truck = new Truck(truckFuel, truckConsumption);
-
+            for (int i = 0; i < 3; i++)
+            {
+                ReadVehicle(vehicles);
+            }
+            
             int numCmd = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < numCmd; i++)
             {
-                string[] cmd = Console.ReadLine().Split();
-
-                if (cmd[0] == "Drive")
-                {
-                    double distance = double.Parse(cmd[2]);
-                    if (cmd[1] == "Car")
-                    {
-                        car.Drive(distance);
-                    }
-                    else
-                    {
-                        truck.Drive(distance);
-                    }
-                }
-                else
-                {
-                    double fuel = double.Parse(cmd[2]);
-                    if (cmd[1] == "Car")
-                    {
-                        car.Refuel(fuel);
-                    }
-                    else
-                    {
-                        truck.Refuel(fuel);
-                    }
-                }
+                ReadCommandForAVehicle(vehicles);
             }
 
-            Console.WriteLine(car);
-            Console.WriteLine(truck);
+            foreach (var vehicle in vehicles)
+            {
+                Console.WriteLine(vehicle.Value);
+            }
+        }
+
+        private static void ReadVehicle(Dictionary<string, Vehicle> vehicles)
+        {
+            string[] vehicleInfo = Console.ReadLine().Split();
+            string type = vehicleInfo[0];
+            double vehicleFuel = double.Parse(vehicleInfo[1]);
+            double vehicleConsumption = double.Parse(vehicleInfo[2]);
+            double vehicleTankCapacity = double.Parse(vehicleInfo[3]);
+
+            Vehicle vehicle = null;
+            string key = null;
+
+            switch (type)
+            {
+                
+                case "Car":
+                    vehicle = new Car(vehicleFuel, vehicleConsumption, vehicleTankCapacity);
+                    key = "Car";
+                    break;
+                case "Truck":
+                    vehicle = new Truck(vehicleFuel, vehicleConsumption, vehicleTankCapacity);
+                    key = "Truck";
+                    break;
+                case "Bus":
+                    vehicle = new Bus(vehicleFuel, vehicleConsumption, vehicleTankCapacity);
+                    key = "Bus";
+                    break;
+            }
+
+            vehicles.Add(key, vehicle);
+        }
+
+        private static void ReadCommandForAVehicle(Dictionary<string, Vehicle> vehicles)
+        {
+            string[] cmd = Console.ReadLine().Split();
+            string type = cmd[1];
+            string action = cmd[0];
+
+            Vehicle vehicle = vehicles[type];
+
+            if (action == "Drive")
+            {
+                double distance = double.Parse(cmd[2]);
+                vehicle.Drive(distance);
+            }
+            else if (action == "Refuel")
+            {
+                double fuel = double.Parse(cmd[2]);
+                vehicle.Refuel(fuel);
+            }
+            else if (action == "DriveEmpty")
+            {
+                double distance = double.Parse(cmd[2]);
+                ((Bus)vehicle).Drive(distance, "without passengers");
+            }
         }
     }
 }
