@@ -11,6 +11,10 @@ namespace Stealer
             string result = spy.StealFieldInfo("Stealer.Hacker", "username", "password");
 
             Console.WriteLine(result);
+
+            string analyze = spy.AnalyzeAccessModifiers("Stealer.Hacker");
+
+            Console.WriteLine(analyze);
         }
     }
 }

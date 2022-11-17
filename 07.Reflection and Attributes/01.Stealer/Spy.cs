@@ -16,7 +16,7 @@ namespace Stealer
 
             Type type = Type.GetType(className);
 
-            var fieldsInfo = type.GetFields(BindingFlags.Instance | BindingFlags.Public 
+            var fieldsInfo = type.GetFields(BindingFlags.Instance | BindingFlags.Public
                                               | BindingFlags.Static | BindingFlags.NonPublic);
 
             var instanceOfClass = Activator.CreateInstance(type);
@@ -24,6 +24,36 @@ namespace Stealer
             foreach (var field in fieldsInfo.Where(f => fieldsName.Contains(f.Name)))
             {
                 sb.AppendLine($"{field.Name} = {field.GetValue(instanceOfClass)}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
+
+        public string AnalyzeAccessModifiers(string className)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            Type type = Type.GetType(className);
+            var fieldsInfo = type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static);
+
+            foreach (var field in fieldsInfo)
+            {
+                sb.AppendLine($"{field.Name} must be private!");
+            }
+
+            var methodsInfo = type.GetMethods(BindingFlags.Instance | BindingFlags.Public
+                                             | BindingFlags.Static | BindingFlags.NonPublic);
+
+            foreach (var method in methodsInfo)
+            {
+                if (method.Name.StartsWith("get") && !method.IsPublic)
+                {
+                    sb.AppendLine($"{method.Name} have to be public!");
+                }
+                else if (method.Name.StartsWith("set") && !method.IsPrivate)
+                {
+                    sb.AppendLine($"{method.Name} have to be private!");
+                }
             }
 
             return sb.ToString().TrimEnd();
