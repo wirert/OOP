@@ -6,4 +6,8 @@
     <RootNamespace>WildFarm</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Unity.NetCore" Version="4.0.3" />
+  </ItemGroup>
+
 </Project>
