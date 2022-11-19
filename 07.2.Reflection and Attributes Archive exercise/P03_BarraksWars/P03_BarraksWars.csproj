@@ -6,4 +6,10 @@
     <RootNamespace>_03BarracksFactory</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Core\NewFolder\**" />
+    <EmbeddedResource Remove="Core\NewFolder\**" />
+    <None Remove="Core\NewFolder\**" />
+  </ItemGroup>
+
 </Project>

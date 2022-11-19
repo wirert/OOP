@@ -1,6 +1,6 @@
 ﻿namespace _03BarracksFactory.Models.Units
 {
-    internal class Gunner : Unit
+    public class Gunner : Unit
     {
         private const int DefaultHealth = 20;
         private const int DefaultAttackDamage = 20;
