@@ -1,9 +1,9 @@
 ﻿namespace BookingApp.Models.Hotels.Contacts
 {
-    using BookingApp.Repositories.Contracts;
-    using global::BookingApp.Models.Bookings.Contracts;
-    using global::BookingApp.Models.Rooms.Contracts;
-    using System.Collections.Generic;
+    using Bookings.Contracts;
+    using Repositories.Contracts;
+    using Rooms.Contracts;
+
     public interface IHotel
     {
         string FullName { get; }
