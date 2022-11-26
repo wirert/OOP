@@ -15,7 +15,7 @@ namespace INStock.Contracts
 
         public int CompareTo([AllowNull] IProduct other)
         {
-            throw new NotImplementedException();
+            return Label.CompareTo(other.Label);
         }
     }
 }

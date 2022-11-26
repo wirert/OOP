@@ -2,6 +2,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 
 namespace INStock
@@ -15,7 +18,7 @@ namespace INStock
             this.products = products;
         }
 
-        public IProduct this[int index] 
+        public IProduct this[int index]
         {
             get
             {
@@ -26,10 +29,10 @@ namespace INStock
 
                 return products[index];
             }
-            set 
+            set
             {
                 products[index] = value;
-            }         
+            }
         }
 
         public int Count => products.Count;
@@ -39,25 +42,18 @@ namespace INStock
             products.Add(product);
         }
 
-        public bool Contains(IProduct product)
-        {
-            throw new NotImplementedException();
-        }
+        public bool Contains(IProduct product) => products.Any(p => p.Label == product.Label);
 
-        public IProduct Find(int index)
-        {
-            throw new NotImplementedException();
-        }
+        public IProduct Find(int index) => products[index];
 
-        public IEnumerable<IProduct> FindAllByPrice(double price)
-        {
-            throw new NotImplementedException();
-        }
 
-        public IEnumerable<IProduct> FindAllByQuantity(int quantity)
-        {
-            throw new NotImplementedException();
-        }
+        public IEnumerable<IProduct> FindAllByPrice(double price) 
+            => products.Where(p => p.Price == (decimal)price);
+        
+
+        public IEnumerable<IProduct> FindAllByQuantity(int quantity) 
+            => products.Where(p => p.Quantity == quantity);
+
 
         public IEnumerable<IProduct> FindAllInRange(double lo, double hi)
         {
@@ -66,7 +62,14 @@ namespace INStock
 
         public IProduct FindByLabel(string label)
         {
-            throw new NotImplementedException();
+            IProduct product = products.FirstOrDefault(p => p.Label == label);
+
+            if (product == null)
+            {
+                throw new ArgumentException("There is no suck product in Stock");
+            }
+
+            return product;
         }
 
         public IProduct FindMostExpensiveProduct()
