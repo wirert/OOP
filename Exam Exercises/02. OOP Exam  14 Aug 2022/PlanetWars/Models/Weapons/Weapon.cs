@@ -35,5 +35,10 @@
                 destructionLevel = value;
             }
         }
+
+        public override string ToString()
+        {
+            return this.GetType().Name;
+        }
     }
 }

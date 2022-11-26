@@ -1,22 +1,24 @@
 ﻿namespace PlanetWars.Core
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Numerics;
     using System.Reflection;
     using System.Text;
+
     using Contracts;
+    using Models.MilitaryUnits.Contracts;
+    using Models.Planets;
     using Models.Planets.Contracts;
-    using PlanetWars.Models.MilitaryUnits.Contracts;
-    using PlanetWars.Models.Planets;
-    using PlanetWars.Models.Weapons.Contracts;
-    using PlanetWars.Utilities.Messages;
+    using Models.Weapons;
+    using Models.Weapons.Contracts;
+    using Utilities.Messages;
     using Repositories;
     using Repositories.Contracts;
 
     public class Controller : IController
     {
+        private const double TrainArmyCost = 1.25;
+
         private IRepository<IPlanet> planets;
 
         public Controller()
@@ -34,7 +36,7 @@
             planet.AddUnit(unit);
 
             return string.Format(OutputMessages.UnitAdded, unitTypeName, planetName);
-        }        
+        }
 
         public string AddWeapon(string planetName, string weaponTypeName, int destructionLevel)
         {
@@ -48,7 +50,16 @@
                     .Format(ExceptionMessages.WeaponAlreadyAdded, weaponTypeName, planet.Name));
             }
 
-            var weapon = (IWeapon)Activator.CreateInstance(type);
+            IWeapon weapon = null;
+            try
+            {
+                weapon = (IWeapon)Activator.CreateInstance(type, new object[] { destructionLevel });
+            }
+            catch (TargetInvocationException tiex)
+            {
+                throw tiex.InnerException;
+            }
+
 
             planet.Spend(weapon.Price);
             planet.AddWeapon(weapon);
@@ -70,17 +81,66 @@
 
         public string ForcesReport()
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("***UNIVERSE PLANET MILITARY REPORT***");
+
+            foreach (IPlanet planet in planets.Models.OrderByDescending(p => p.MilitaryPower).ThenBy(p => p.Name))
+            {
+                sb.AppendLine(planet.PlanetInfo());
+            }
+
+            return sb.ToString().Trim();
         }
 
         public string SpaceCombat(string planetOne, string planetTwo)
         {
-            throw new NotImplementedException();
+            IPlanet winner = null;
+            IPlanet loser = null;
+            var planet1 = planets.FindByName(planetOne);
+            var planet2 = planets.FindByName(planetTwo);
+            planet1.Spend(planet1.Budget / 2);
+            planet2.Spend(planet2.Budget / 2);
+            int result = CamparePlanetsByPower(planet1, planet2);
+
+            if (result == 1)
+            {
+                winner = planet1;
+                loser = planet2;
+            }
+            else if (result == -1)
+            {
+                winner = planet2;
+                loser = planet1;
+            }
+            else
+            {
+                return OutputMessages.NoWinner;
+            }
+
+            double loserForcesCost = loser.Army.Sum(u => u.Cost);
+            double loserWeaponsPrices = loser.Weapons.Sum(w => w.Price);
+
+            winner.Profit(loser.Budget + loserForcesCost + loserWeaponsPrices);
+
+            planets.RemoveItem(loser.Name);
+
+            return string.Format(OutputMessages.WinnigTheWar, winner.Name, loser.Name);
         }
 
         public string SpecializeForces(string planetName)
         {
-            throw new NotImplementedException();
+            var planet = planets.FindByName(planetName);
+
+            if (!planet.Army.Any())
+            {
+                throw new InvalidOperationException(ExceptionMessages.NoUnitsFound);
+            }
+
+            planet.Spend(TrainArmyCost);
+            planet.TrainArmy();
+
+            return string.Format(OutputMessages.ForcesUpgraded, planetName);
         }
 
         private IPlanet FindPlanetIfExist(string planetName)
@@ -96,8 +156,8 @@
         }
 
         private IMilitaryUnit CheckAndInstantiateUnit(string unitTypeName, IPlanet planet)
-        {      
-            var type = GetTypeByName(unitTypeName);            
+        {
+            var type = GetTypeByName(unitTypeName);
 
             if (planet.Army.Any(u => u.GetType().Name == unitTypeName))
             {
@@ -110,9 +170,9 @@
 
         private Type GetTypeByName(string typeName)
         {
-            Assembly assembly = Assembly.GetEntryAssembly();
+            Assembly assembly = typeof(StartUp).Assembly;
 
-            var type = assembly.GetTypes().FirstOrDefault(t => t.Name != typeName);
+            var type = assembly.GetTypes().FirstOrDefault(t => t.Name == typeName);
 
             if (type == null)
             {
@@ -121,5 +181,38 @@
 
             return type;
         }
+
+        private int CamparePlanetsByPower(IPlanet planetOne, IPlanet planetTwo)
+        {
+            if (planetOne.MilitaryPower > planetTwo.MilitaryPower)
+            {
+                return 1;
+            }
+            else if (planetOne.MilitaryPower < planetTwo.MilitaryPower)
+            {
+                return -1;
+            }
+            else
+            {
+                if ((IsHaveNucs(planetOne) && IsHaveNucs(planetTwo))
+                    || (!IsHaveNucs(planetOne) && !IsHaveNucs(planetTwo)))
+                {
+                    return 0;
+                }
+                else if (IsHaveNucs(planetOne) && !IsHaveNucs(planetTwo))
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+        }
+
+        private bool IsHaveNucs(IPlanet planet)
+            => planet.Weapons.Any(w => w.GetType().Name == typeof(NuclearWeapon).Name);
+
+
     }
 }

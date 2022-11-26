@@ -8,12 +8,12 @@
     using Contracts;
     using MilitaryUnits;
     using MilitaryUnits.Contracts;
-    using PlanetWars.Repositories;
+    using Repositories;
     using Repositories.Contracts;
     using Utilities.Messages;
     using Weapons;
     using Weapons.Contracts;
-    
+
 
     public class Planet : IPlanet
     {
@@ -68,7 +68,6 @@
 
         public void AddWeapon(IWeapon weapon) => weapons.AddItem(weapon);
 
-
         public string PlanetInfo()
         {
             StringBuilder sb = new StringBuilder();
@@ -76,17 +75,17 @@
             sb.AppendLine($"Planet: {this.Name}")
                 .AppendLine($"--Budget: {this.Budget} billion QUID");
 
-            string forces = this.Army.Count == 0 ? "No units" : string.Join( ", ", this.Army );
+            string forces = this.Army.Count == 0 ? "No units" : string.Join(", ", this.Army);
             sb.AppendLine("--Forces: " + forces);
 
-            string equipment = this.Weapons.Count == 0 ? "No weapons" : string.Join( ", ", this.Weapons );
+            string equipment = this.Weapons.Count == 0 ? "No weapons" : string.Join(", ", this.Weapons);
             sb.AppendLine("--Combat equipment: " + equipment)
                 .AppendLine($"--Military Power: {this.MilitaryPower}");
 
             return sb.ToString().Trim();
         }
 
-        public void Profit(double amount) => this.Budget += amount;        
+        public void Profit(double amount) => this.Budget += amount;
 
         public void Spend(double amount)
         {
@@ -113,12 +112,14 @@
 
             double totalPower = totalEndurance + totalDestructionLevel;
 
-            if (this.Army.Any(u => u.GetType().Name == typeof(AnonymousImpactUnit).Name)) 
+            if (this.Army.Any(u => u.GetType().Name == typeof(AnonymousImpactUnit).Name))
             {
                 totalPower *= 1.3;
             }
 
-            if (this.Weapons.Any(w => w.GetType().Name == typeof(NuclearWeapon).Name)) 
+            Math.Round(totalPower, 3);
+
+            if (this.Weapons.Any(w => w.GetType().Name == typeof(NuclearWeapon).Name))
             {
                 totalPower *= 1.45;
             }

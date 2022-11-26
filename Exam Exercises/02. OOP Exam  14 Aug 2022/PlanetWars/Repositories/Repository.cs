@@ -1,6 +1,5 @@
 ﻿namespace PlanetWars.Repositories
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -17,13 +16,13 @@
 
         public IReadOnlyCollection<T> Models => (IReadOnlyCollection<T>)this.models;
 
-        public void AddItem(T model) => models.Add(model);        
+        public void AddItem(T model) => models.Add(model);
 
         public T FindByName(string name) => Models.FirstOrDefault(w => w.GetType().Name == name);
 
         public bool RemoveItem(string name)
         {
-            T model = Models.FirstOrDefault(w => w.GetType().Name == Type.GetType(name).Name);
+            T model = this.FindByName(name);
 
             if (model != null)
             {
