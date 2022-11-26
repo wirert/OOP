@@ -116,7 +116,7 @@
 
             if (type == null)
             {
-                throw new InvalidOperationException(string.Format(ExceptionMessages.ItemNotAvailable, unitTypeName));
+                throw new InvalidOperationException(string.Format(ExceptionMessages.ItemNotAvailable, typeName));
             }
 
             return type;
