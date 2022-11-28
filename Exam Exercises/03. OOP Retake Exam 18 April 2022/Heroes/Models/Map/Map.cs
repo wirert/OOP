@@ -7,13 +7,13 @@
     using Utilities.Messages;
 
     public class Map : IMap
-    {    
+    {
         public string Fight(ICollection<IHero> players)
         {
-            List<IHero> knights= new List<IHero>();
-            List<IHero> barbarians= new List<IHero>();
+            List<IHero> knights = new List<IHero>();
+            List<IHero> barbarians = new List<IHero>();
 
-            foreach (var hero in players.Where(h => h.IsAlive))
+            foreach (var hero in players)
             {
                 if (hero is Knight)
                 {
@@ -28,48 +28,36 @@
             int deadKnights = 0;
             int deadBarbarians = 0;
 
-            while (barbarians.Count != 0 && knights.Count != 0)
+            while (barbarians.Count != deadBarbarians && knights.Count != deadKnights)
             {
-                foreach (var knight in knights)
+                deadBarbarians = AttackAllOpponents(knights, barbarians, deadBarbarians);
+                
+                deadKnights = AttackAllOpponents(barbarians, knights, deadKnights);                
+            }
+
+            string result = barbarians.Count == deadBarbarians 
+                ? string.Format(OutputMessages.BattleResult, "knights", deadKnights)
+                : string.Format(OutputMessages.BattleResult, "barbarians", deadBarbarians);
+
+            return result;
+        }
+
+        private int AttackAllOpponents(List<IHero> attackers, List<IHero> defenders, int deadDefenders)
+        {
+            foreach (var attacker in attackers.Where(a => a.IsAlive))
+            {
+                foreach (var defender in defenders.Where(d => d.IsAlive))
                 {
-                    for (int i = 0; i < barbarians.Count; i++)                    
+                    defender.TakeDamage(attacker.Weapon.DoDamage());
+
+                    if (!defender.IsAlive)
                     {
-                        barbarians[i].TakeDamage(knight.Weapon.DoDamage());
-
-                        if (!barbarians[i].IsAlive)
-                        {
-                            deadBarbarians++;
-                            barbarians.RemoveAt(i);
-
-                            if (barbarians.Count == 0)
-                            {
-                                return string.Format(OutputMessages.BattleResult, "knights", deadKnights);
-                            }
-                        }
-                    }
-                }
-
-                foreach (var barbarian in barbarians)
-                {
-                    for (int i = 0; i < knights.Count; i++)
-                    {
-                        knights[i].TakeDamage(barbarian.Weapon.DoDamage());
-
-                        if (!knights[i].IsAlive)
-                        {
-                            deadKnights++;
-                            knights.RemoveAt(i);
-
-                            if (knights.Count == 0)
-                            {
-                                return string.Format(OutputMessages.BattleResult, "barbarians", deadBarbarians);
-                            }
-                        }
+                        deadDefenders++;
                     }
                 }
             }
 
-            return "The knights took 0 casualties but won the battle.";
+            return deadDefenders;
         }
     }
 }
