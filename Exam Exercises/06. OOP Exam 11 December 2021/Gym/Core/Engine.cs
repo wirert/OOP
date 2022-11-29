@@ -1,9 +1,11 @@
 ﻿namespace Gym.Core
 {
-    using Gym.Core.Contracts;
-    using Gym.IO;
-    using Gym.IO.Contracts;
     using System;
+
+    using Contracts;
+    using IO;
+    using IO.Contracts;
+
     public class Engine : IEngine
     {
         private IWriter writer;
@@ -14,7 +16,7 @@
         {
             this.writer = new Writer();
             this.reader = new Reader();
-            // this.controller = new Controller();
+            this.controller = new Controller();
         }
 
         public void Run()

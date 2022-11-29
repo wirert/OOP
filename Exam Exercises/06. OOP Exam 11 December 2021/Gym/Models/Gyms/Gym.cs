@@ -70,12 +70,12 @@
         public string GymInfo()
         {
             StringBuilder sb = new StringBuilder();
-            string athlets = Athletes.Count == 0 ? "No athletes" : string.Join(", ", Athletes);
+            string athletsString = Athletes.Count == 0 ? "No athletes" : $"{string.Join(", ", this.athletes)}";
 
             sb.AppendLine($"{this.Name} is a {this.GetType().Name}:")
-                .AppendLine("Athletes: " + athlets)
+                .AppendLine("Athletes: " + athletsString)
                 .AppendLine($"Equipment total count: {this.Equipment.Count}")
-                .AppendLine($"Equipment total weight: {this.EquipmentWeight} grams");
+                .AppendLine($"Equipment total weight: {this.EquipmentWeight:f2} grams");
 
             return sb.ToString().Trim();
         }

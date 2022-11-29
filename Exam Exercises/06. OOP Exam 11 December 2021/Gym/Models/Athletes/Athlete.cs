@@ -61,5 +61,8 @@
         }
 
         public abstract void Exercise();
+
+        public override string ToString() => this.fullName;
+        
     }
 }
