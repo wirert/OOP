@@ -39,7 +39,6 @@
             double racingBehaviorMultiplyer = racer.RacingBehavior == "strict" ? 1.2 : 1.1;
 
             return racer.Car.HorsePower * racer.DrivingExperience * racingBehaviorMultiplyer;
-
         }
     }
 }

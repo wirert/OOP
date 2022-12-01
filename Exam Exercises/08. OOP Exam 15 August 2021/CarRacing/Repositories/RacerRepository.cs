@@ -11,6 +11,11 @@
     {
         private ICollection<IRacer> racers;
 
+        public RacerRepository()
+        {
+            racers= new List<IRacer>();
+        }
+
         public IReadOnlyCollection<IRacer> Models => racers as IReadOnlyCollection<IRacer>;
 
         public void Add(IRacer model)

@@ -1,4 +1,4 @@
-﻿// ReSharper disable InconsistentNaming
+﻿//ReSharper disable InconsistentNaming
 // ReSharper disable FunctionNeverReturns
 namespace CarRacing.Core
 {
@@ -15,9 +15,9 @@ namespace CarRacing.Core
 
         public Engine()
         {
-            this.writer = new Writer();
+            this.writer = new FileWriter();
             this.reader = new Reader();
-            //this.controller = new Controller();
+            this.controller = new Controller();
         }
 
         public void Run()

@@ -70,7 +70,7 @@
         public int HorsePower
         {
             get => horsePower;
-            private set
+            private protected set
             {
                 if (value < 0)
                 {
@@ -104,14 +104,14 @@
             }
         }
 
-        public void Drive()
+        public virtual void Drive()
         {
             FuelAvailable -= FuelConsumptionPerRace;
 
-            if (this.GetType().Name == "TunedCar")
-            {
-                HorsePower -= (int)Math.Round(HorsePower * 3.0 / 100);
-            }
+            //if (this.GetType().Name == "TunedCar")
+            //{
+                
+            //}
         }
     }
 }
