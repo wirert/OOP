@@ -1,6 +1,7 @@
-﻿namespace NavalVessels.IO
+﻿namespace AquaShop.IO
 {
     using System.IO;
+
     using Contracts;
 
     public class FileWriter : IWriter
