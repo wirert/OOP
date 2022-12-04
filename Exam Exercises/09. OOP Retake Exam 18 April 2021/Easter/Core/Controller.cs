@@ -67,7 +67,7 @@
 
             return string.Format(OutputMessages.EggAdded, eggName);
         }
-        
+
 
         public string ColorEgg(string eggName)
         {
@@ -94,7 +94,7 @@
                 if (egg.IsDone())
                 {
                     return string.Format(OutputMessages.EggIsDone, eggName);
-                }                               
+                }
             }
 
             return string.Format(OutputMessages.EggIsNotDone, eggName);
